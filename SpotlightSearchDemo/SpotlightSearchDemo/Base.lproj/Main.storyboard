@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bkN-jM-ZkQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--SpotlightSearch-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZkY-aA-Lf9">
+                                <rect key="frame" x="20" y="84" width="560" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FYD-zn-d7C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZkY-aA-Lf9" secondAttribute="trailing" constant="20" id="Em3-U6-3dR"/>
+                            <constraint firstItem="ZkY-aA-Lf9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LU0-bH-2Vx"/>
+                            <constraint firstItem="ZkY-aA-Lf9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aL7-dw-A9W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SpotlightSearch" id="Gkm-WX-RdI"/>
+                    <connections>
+                        <outlet property="myImage" destination="ZkY-aA-Lf9" id="jFX-tV-TwY"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1057" y="277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9kj-g0-j6h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bkN-jM-ZkQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ECP-qr-NCI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PCv-fC-lJD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyZ-ey-oxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="-415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="390" height="384"/>
+    </resources>
+</document>
